@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>My characters</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- tailwind css file -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- video popup css -->
+    <link rel="stylesheet" href="css/vedio_popup.css">
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="tracking-[4%] font-madetommy font-normal bg-[#131313]">
+
+    <!-- Header area here  -->
+    <header class="header-wrap mask">
+        <div
+            class="header-inner grid grid-cols-12 items-center py-4 lg:pb-4 xl:pt-[14px] xl:pb-[13px] px-4 md:px-4 lg:px-6 xl:pl-8 xl:pr-9 bg-[#131313] border-b border-light-border fixed w-full z-[999] transition duration-200">
+            <div class="col-span-4 md:col-span-3 lg:col-span-2 xl:col-span-1">
+                <div class="flex items-center gap-3 lg:gap-4 xl:gap-5">
+                    <div class="flex items-center">
+                        <button type="button" class="menu-open cursor-pointer">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 12H21" stroke="#e561dc" stroke-width="1.8" stroke-linecap="round" />
+                                <path d="M3 7H21" stroke="#e561dc" stroke-width="1.8" stroke-linecap="round" />
+                                <path d="M3 17H21" stroke="#e561dc" stroke-width="1.8" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <a href="index.html" class="relative z-[9]">
+                            <img class="max-w-[102px] md:max-w-[110px] mt-[-2px]" src="images/sauci-ai.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-3 lg:col-span-2 hidden md:block xl:col-span-3">
+                <ul
+                    class="menu-wrap flex items-center gap-10 md:pl-4 lg:pl-14 xl:pl-[110px] 2xxl:pl-[50px] xl:gap-[48px] relative z-[2]">
+                    <li class="active">
+                        <a href="#"
+                            class="flex gap-2 items-center text-white text-[13.5px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[68%] xxl:after:left-[60%] after:bottom-[-26px] lg:after:bottom-[-24px] after:h-1 after:w-[90px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img src="images/menu-icon-01.png" alt="">
+                            <span>GIRLS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex gap-2 items-center text-white text-[13.5px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[68%] xxl:after:left-[55%] after:bottom-[-26px] lg:after:bottom-[-24px] after:h-1 after:w-[90px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img src="images/menu-icon-02.png" alt="">
+                            <span>ANIME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex gap-2 items-center text-white text-[13.5px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[68%] xxl:after:left-[55%] after:bottom-[-26px] lg:after:bottom-[-24px] after:h-1 after:w-[90px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img src="images/menu-icon-03.png" alt="">
+                            <span>GUYS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-8 md:col-span-6 lg:col-span-8 flex justify-end">
+                <div class="flex items-center justify-end flex-row-reverse md:flex-row">
+                    <div class="hidden sm:block">
+                        <button command="show-modal" commandfor="dialog"
+                            class="py-2 px-4 md:px-3 lg:px-5 rounded-lg xl:rounded-[10px] bg-[#3E6FF3] text-[13px] md:text-[13.5px] text-white cursor-pointer border-1 border-[#3E6FF3] hover:border-primary hover:bg-primary hover:transform hover:-translate-y-[2px]"
+                            type="button">
+                            <span class="hidden lg:block">Create a Free Account</span>
+                            <span class="lg:hidden">Sign Up Free</span>
+                        </button>
+                    </div>
+                    <div class="pl-[11px] md:pl-[9px] sm:pr-[16px]">
+                        <button command="show-modal" commandfor="loginDialog" type="button"
+                            class="py-[6.5px] md:py-[7.5px] px-[13px] md:px-5 rounded-lg xl:rounded-[10px] text-[13px] border-1 border-primary md:text-[13.5px] text-white cursor-pointer hover:bg-primary hover:transform hover:-translate-y-[2px] flex items-center gap-[6px] md:gap-0 bg-primary md:bg-transparent">
+                            <span class="hidden md:block">Login</span>
+                            <span class="md:hidden">Sign In</span>
+                            <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="11.61" height="11.61"
+                                viewBox="0 0 11.61 11.61">
+                                <path id="sign-in-svgrepo-com-2"
+                                    d="M5.58,3a.645.645,0,1,0,0,1.29h7.095a.645.645,0,0,1,.645.645v7.74a.645.645,0,0,1-.645.645H5.58a.645.645,0,1,0,0,1.29h7.095a1.935,1.935,0,0,0,1.935-1.935V4.935A1.935,1.935,0,0,0,12.675,3ZM9.261,5.769a.645.645,0,1,0-.912.912L9.828,8.16H3.645a.645.645,0,1,0,0,1.29H9.828L8.349,10.929a.645.645,0,0,0,.912.912l2.58-2.58a.645.645,0,0,0,0-.912Z"
+                                    transform="translate(-3 -3)" fill="#fff" fill-rule="evenodd" />
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="pr-2">
+                        <label for="my-toggle"
+                            class="relative flex h-[20px] w-[56px] cursor-pointer items-center rounded-full px-1.5 transition-all duration-300 transform scale-[1.3] md:scale-[1.1]"
+                            style="--toggle-bg: #6169EC; background: var(--toggle-bg);">
+                            <input id="my-toggle" checked type="checkbox" class="peer sr-only" />
+
+                            <!-- knob (black circle) -->
+                            <span
+                                class="absolute left-[2px] h-4 w-4 rounded-full bg-[#131313] transition-transform duration-300 peer-checked:translate-x-[35.5px]"></span>
+
+                            <!-- OFF Label (shown when unchecked) -->
+                            <span
+                                class="absolute pt-[2.5px] right-2 text-[9px] text-white transition-opacity duration-200 peer-checked:opacity-0 peer-checked:translate-x-1">
+                                WNSF
+                            </span>
+
+                            <!-- ON Label (shown when checked) -->
+                            <span
+                                class="absolute pt-[1.4px] left-2 text-[9px] text-white opacity-0 transition-opacity duration-200 peer-checked:opacity-100 peer-checked:translate-x-0">
+                                NSFW
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile menu code -->
+            <div
+                class="col-span-12 bg-[#1F1F1F] mx-[-16px] transform mb-[-71px] md:hidden border-t border-light-border">
+                <ul
+                    class="menu-wrap flex items-center justify-center gap-10 xl:gap-11 relative z-[2] pt-[9px] pb-[11px]">
+                    <li class="active">
+                        <a href="#"
+                            class="flex gap-[5px] items-center text-white text-[12px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[56%] after:bottom-[-11px] after:h-[3px] after:w-[66px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img class="max-w-[11px] md:max-w-auto" src="images/menu-icon-01.png" alt="">
+                            <span>GIRLS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex gap-[5px] items-center text-white text-[12px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[52%] after:bottom-[-11px] after:h-[3px] after:w-[66px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img class="max-w-[15px] md:max-w-auto" src="images/menu-icon-02.png" alt="">
+                            <span>ANIME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex gap-[5px] items-center text-white text-[12px] hover:text-primary relative after:absolute after:content-[''] after:block after:left-[57%] after:bottom-[-11px] after:h-[3px] after:w-[66px] after:transform after:-translate-x-1/2 after:bg-[#3875F5] after:opacity-0">
+                            <img class="max-w-[15px] md:max-w-auto" src="images/menu-icon-03.png" alt="">
+                            <span>GUYS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Header area here  -->
+
+    <!-- sign up popup here -->
+    <el-dialog>
+        <dialog id="dialog" aria-labelledby="dialog-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+
+            <el-dialog-backdrop
+                class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in">
+            </el-dialog-backdrop>
+
+            <div tabindex="0"
+                class="flex min-h-full justify-center p-4 text-center focus:outline-none items-center sm:p-0">
+
+                <el-dialog-panel
+                    class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+                    <!-- Close Icon -->
+                    <button command="close" commandfor="dialog"
+                        class="absolute right-4 top-4 text-gray-400 hover:text-white text-xl cursor-pointer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <!-- Modal Body -->
+                    <div class="bg-gray-800 px-6 pt-8 pb-4 sm:p-8 sm:pb-6">
+                        <div class="sm:flex sm:items-start">
+                            <div
+                                class="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-500/10 sm:mx-0 sm:size-10">
+                                <i class="fa-solid fa-user-plus text-blue-400 text-xl"></i>
+                            </div>
+
+                            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h3 id="dialog-title" class="text-lg font-semibold text-white">
+                                    Create a Free Account
+                                </h3>
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-400">
+                                        Sign up for free to get started. It's quick and easy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Fields -->
+                        <form class="mt-6 space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                                <input type="text"
+                                    class="w-full rounded-md bg-gray-700/40 border border-white/10 px-3 py-3 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:ring-0 outline-0"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                                <input type="email"
+                                    class="w-full rounded-md bg-gray-700/40 border border-white/10 px-3 py-3 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:ring-0 outline-0"
+                                    placeholder="Enter your email">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                                <input type="password"
+                                    class="w-full rounded-md bg-gray-700/40 border border-white/10 px-3 py-3 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:ring-0 outline-0"
+                                    placeholder="Create a password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="bg-gray-700/25 px-6 pt-4 pb-7 sm:px-8">
+                        <button type="button"
+                            class="inline-flex w-full justify-center rounded-md bg-blue-500 px-4 py-3 text-[14px] text-white hover:bg-primary hover:transform hover:-translate-y-[2px] cursor-pointer">
+                            Create Account
+                        </button>
+                    </div>
+
+                </el-dialog-panel>
+            </div>
+        </dialog>
+    </el-dialog>
+    <!-- sign up popup here -->
+
+    <!-- Login popup here  -->
+    <el-dialog>
+        <dialog id="loginDialog" aria-labelledby="login-title"
+            class="fixed inset-0 size-auto max-h-none max-w-none overflow-y-auto bg-transparent backdrop:bg-transparent">
+
+            <el-dialog-backdrop
+                class="fixed inset-0 bg-gray-900/50 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in">
+            </el-dialog-backdrop>
+
+            <div tabindex="0"
+                class="flex min-h-full items-center justify-center p-4 text-center focus:outline-none sm:p-0">
+
+                <el-dialog-panel
+                    class="relative transform overflow-hidden rounded-lg bg-gray-800 text-left shadow-xl outline -outline-offset-1 outline-white/10 transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95">
+
+                    <!-- Close Icon -->
+                    <button command="close" commandfor="loginDialog"
+                        class="absolute right-4 top-4 text-gray-400 hover:text-white text-xl cursor-pointer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <!-- Modal Body -->
+                    <div class="bg-gray-800 px-6 pt-8 pb-4 sm:p-8 sm:pb-6">
+                        <div class="sm:flex sm:items-start">
+                            <div
+                                class="mx-auto flex size-12 shrink-0 items-center justify-center rounded-full bg-blue-500/10 sm:mx-0 sm:size-10">
+                                <i class="fa-solid fa-right-to-bracket text-blue-400 text-xl"></i>
+                            </div>
+
+                            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h3 id="login-title" class="text-lg font-semibold text-white">
+                                    Login to Your Account
+                                </h3>
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-400">
+                                        Access your dashboard using your registered email and password.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Fields -->
+                        <form class="mt-6 space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                                <input type="email"
+                                    class="w-full rounded-md bg-gray-700/40 border border-white/10 px-3 py-3 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:ring-0 outline-0"
+                                    placeholder="Enter your email">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                                <input type="password"
+                                    class="w-full rounded-md bg-gray-700/40 border border-white/10 px-3 py-3 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:ring-0 outline-0"
+                                    placeholder="Enter your password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="bg-gray-700/25 px-6 pt-4 pb-7 sm:px-8">
+                        <button type="button"
+                            class="inline-flex w-full justify-center rounded-md bg-blue-500 px-4 py-3 text-[14px] text-white hover:bg-primary hover:transform hover:-translate-y-[2px] cursor-pointer">
+                            Login
+                        </button>
+                    </div>
+
+                </el-dialog-panel>
+            </div>
+        </dialog>
+    </el-dialog>
+    <!-- Login popup here  -->
+
+    <!-- Main content area -->
+    <main class="main">
+        <div class="flex pt-[100px] md:pt-[70px] lg:pt-[60px] xl:pt-[65px]">
+            <!-- sidebar wrap -->
+          <aside
+                class="sidebar-wrap scrollbar-w-none border-r border-light-border bg-[#171717] h-screen fixed max-w-[220px] w-full py-11 md:py-14 overflow-auto z-[9]">
+
+                <!-- primary action -->
+                <div
+                    class="sidebar-menu pb-6 md:pb-10 mb-5 md:mb-8 border-b border-light-border px-4 md:px-5 lg:px-7 xl:px-8">
+
+                    <ul class="flex flex-col gap-4 md:gap-[28px]">
+                        <li class="active">
+                            <a href="index.html"
+                                class="flex items-center gap-4 text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16.4"
+                                        viewBox="0 0 23.898 21.962">
+                                        <path id="home-svgrepo-com"
+                                            d="M1,8.785V21.962H9.535V16.106a3.2,3.2,0,0,1,3.414-2.928,3.2,3.2,0,0,1,3.414,2.928v5.857H24.9V8.785L12.949,0Z"
+                                            transform="translate(-1)" fill="#fff" />
+                                    </svg>
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chat.html"
+                                class="flex items-center gap-[15px] text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 25.299 25.299">
+                                        <g transform="translate(0.75 0.75)">
+                                            <path
+                                                d="M13.9,25.8A11.892,11.892,0,1,0,3.242,19.2,1.944,1.944,0,0,1,3.4,20.564l-.709,2.649a1.547,1.547,0,0,0,1.894,1.894L7.235,24.4a1.944,1.944,0,0,1,1.366.159A11.849,11.849,0,0,0,13.9,25.8Z"
+                                                transform="translate(-2 -2)" fill="none" stroke="#fff"
+                                                stroke-width="1.5" />
+                                            <path
+                                                d="M10.651,16.329l-.578.68ZM13,9.853l-.638.624a.892.892,0,0,0,1.275,0Zm2.346,6.475-.578-.68ZM13,17.58v-.892h0Zm-1.768-1.931a12.072,12.072,0,0,1-1.9-1.976,3.436,3.436,0,0,1-.793-1.906H6.75a5.162,5.162,0,0,0,1.136,2.958,13.825,13.825,0,0,0,2.187,2.283ZM8.535,11.768A2.176,2.176,0,0,1,9.729,9.529a2.54,2.54,0,0,1,2.631.949l1.275-1.249A4.286,4.286,0,0,0,9.1,7.857a3.934,3.934,0,0,0-2.354,3.91Zm7.386,5.241a13.825,13.825,0,0,0,2.187-2.283,5.162,5.162,0,0,0,1.136-2.958H17.459a3.437,3.437,0,0,1-.793,1.906,12.07,12.07,0,0,1-1.9,1.976Zm3.323-5.241a3.934,3.934,0,0,0-2.354-3.91,4.286,4.286,0,0,0-4.531,1.372l1.275,1.249a2.54,2.54,0,0,1,2.631-.949,2.176,2.176,0,0,1,1.194,2.239Zm-9.171,5.241A4.335,4.335,0,0,0,13,18.472V16.687c-.493,0-.734-.159-1.768-1.038Zm4.692-1.359c-1.033.879-1.275,1.038-1.768,1.038v1.785a4.335,4.335,0,0,0,2.924-1.464Z"
+                                                transform="translate(-1.098 -0.928)" fill="#fff" opacity="0.5" />
+                                        </g>
+                                    </svg>
+
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">Chat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="upgradebtn flex items-center justify-center gap-[12px] border border-primary rounded-xl text-white w-full px-4 py-3 text-[15px] md:text-[15.5px] hover:text-primary">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_212_2867)">
+<path d="M9 10.5C5.64525 10.5 2.25 11.2725 2.25 12.75C2.25 14.2275 5.64525 15 9 15C12.3547 15 15.75 14.2275 15.75 12.75C15.75 11.2725 12.3547 10.5 9 10.5ZM14.844 13.029C14.772 13.0935 14.6828 13.125 14.5928 13.125C14.49 13.125 14.3887 13.083 14.3137 13.0012C14.0827 12.7447 12.3255 12 9 12C5.6745 12 3.91725 12.7447 3.68625 13.0012C3.546 13.155 3.30975 13.1662 3.156 13.029C3.00225 12.8902 2.99025 12.6533 3.12825 12.4988C3.564 12.0158 5.54325 11.25 9 11.25C12.4567 11.25 14.436 12.0158 14.8717 12.4988C15.0098 12.6525 14.9978 12.8902 14.844 13.029Z" fill="white"/>
+<path d="M4.11823 12.75H13.881C13.149 12.4305 11.5312 12 8.99922 12C6.46722 12 4.85098 12.4305 4.11823 12.75Z" fill="white"/>
+<path d="M16.5 4.5C15.6727 4.5 15 5.17275 15 6C15 6.1575 15.0255 6.3135 15.0743 6.46275L13.8585 7.236C13.0583 7.74675 12.0015 7.5765 11.4008 6.84225L10.2075 5.3835C10.3958 5.1285 10.5 4.821 10.5 4.5C10.5 3.67275 9.82725 3 9 3C8.17275 3 7.5 3.67275 7.5 4.5C7.5 4.821 7.60425 5.1285 7.7925 5.3835L6.59925 6.84225C5.99775 7.5765 4.941 7.74675 4.1415 7.23675L2.92575 6.46275C2.9745 6.3135 3 6.1575 3 6C3 5.17275 2.32725 4.5 1.5 4.5C0.67275 4.5 0 5.17275 0 6C0 6.783 0.603 7.428 1.36875 7.49475L2.25525 12.8115C2.289 13.0163 2.48325 13.1573 2.6865 13.1198C2.8695 13.089 2.9925 12.93 2.9925 12.75H3.03525C3.03525 12.6608 3.06375 12.5708 3.12825 12.4988C3.564 12.0158 5.54325 11.25 9 11.25C12.4567 11.25 14.436 12.0158 14.8717 12.4988C14.9363 12.5708 14.9647 12.6608 14.9647 12.75H15.0075C15.0075 12.93 15.1305 13.089 15.3135 13.1198C15.3345 13.1235 15.3547 13.125 15.3757 13.125C15.5557 13.125 15.7147 12.9953 15.7455 12.8115L16.632 7.49475C17.397 7.428 18 6.783 18 6C18 5.17275 17.3272 4.5 16.5 4.5Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_212_2867">
+<rect width="18" height="18" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+<span class="text-base font-medium">Upgrade</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-4 text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                        viewBox="0 0 24.286 24.286">
+                                        <path
+                                            d="M4,20.715H26.286m-11.143-9.75h.014m5.382,9.75a5.573,5.573,0,0,0-10.792,0m6.789-9.75a1.393,1.393,0,1,1-1.393-1.393A1.393,1.393,0,0,1,16.536,10.964ZM8.457,4H21.829a6.921,6.921,0,0,1,2.936.3,2.785,2.785,0,0,1,1.217,1.217,6.92,6.92,0,0,1,.3,2.936V21.829a6.921,6.921,0,0,1-.3,2.936,2.785,2.785,0,0,1-1.217,1.217,6.921,6.921,0,0,1-2.936.3H8.457a6.92,6.92,0,0,1-2.936-.3A2.785,2.785,0,0,1,4.3,24.765,6.921,6.921,0,0,1,4,21.829V8.457a6.921,6.921,0,0,1,.3-2.936A2.786,2.786,0,0,1,5.521,4.3,6.921,6.921,0,0,1,8.457,4Z"
+                                            transform="translate(-3 -3)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">Generate</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-[13px] text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18.5"
+                                        viewBox="0 0 27.465 23.286">
+                                        <g transform="translate(1)">
+                                            <path
+                                                d="M16.929,24.322H4.393A1.393,1.393,0,0,1,3,22.929V10.393A1.393,1.393,0,0,1,4.393,9H8.572m8.357,15.322h4.179A1.393,1.393,0,0,0,22.5,22.929V19.447m-5.572,4.875V22.929"
+                                                transform="translate(-3 -2.036)" fill="none" stroke="#f7a31e"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            <path
+                                                d="M28.286,6.786A2.786,2.786,0,0,0,25.5,4H8.786A2.786,2.786,0,0,0,6,6.786V19.322a2.786,2.786,0,0,0,2.786,2.786H25.5a2.786,2.786,0,0,0,2.786-2.786Zm-5.572,0a1.393,1.393,0,1,1-2.786,0h0a1.393,1.393,0,0,1,2.786,0Zm-1.393,6.964a1.393,1.393,0,0,0,1.393-1.393h0a1.393,1.393,0,0,0-2.786,0h0a1.393,1.393,0,0,0,1.393,1.393Zm1.393,4.179a1.393,1.393,0,0,1-2.786,0h0a1.393,1.393,0,0,1,2.786,0h0Z"
+                                                transform="translate(-1.821 -4)" fill="#f7a31e" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">Buy Tokens</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Generate action -->
+                <div
+                    class="sidebar-menu pb-6 md:pb-10 mb-5 md:mb-8 border-b border-light-border px-4 md:px-5 lg:px-7 xl:px-8">
+                    <h4 class="text-white text-[18px] md:text-[19px] font-medium pb-5">Generate</h4>
+                    <ul class="flex flex-col gap-4">
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-[14px] text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.898" height="15.326"
+                                        viewBox="0 0 23.898 17.326">
+                                        <path id="character-add-svgrepo-com"
+                                            d="M25.427,164.2V161.61a.428.428,0,0,0-.4-.4H23.659a.428.428,0,0,0-.4.4V164.2a.257.257,0,0,1-.274.274H20.423a.431.431,0,0,0-.3.112.368.368,0,0,0-.124.286v1.344a.425.425,0,0,0,.423.423h2.564a.257.257,0,0,1,.274.274v2.564a.425.425,0,0,0,.423.423h1.344a.381.381,0,0,0,.274-.124.407.407,0,0,0,.124-.3v-2.564a.257.257,0,0,1,.274-.274H28.29a.381.381,0,0,0,.274-.124.407.407,0,0,0,.124-.3v-1.344a.368.368,0,0,0-.124-.286.4.4,0,0,0-.274-.112H25.7a.257.257,0,0,1-.274-.274Zm6.721,5.576a11.715,11.715,0,0,0-3.883,1.494,3.157,3.157,0,0,0-1.743,2.614v.349a1.105,1.105,0,0,0,1.1,1.1H42.8a1.105,1.105,0,0,0,1.1-1.1v-.349a3.207,3.207,0,0,0-1.792-2.639,12.42,12.42,0,0,0-3.933-1.469,1.664,1.664,0,0,1-1.008-.61,1.732,1.732,0,0,1-.386-1.108v-.149a1.061,1.061,0,0,1,.423-.846,5.021,5.021,0,0,0,1.718-2.116,6.3,6.3,0,0,0,.622-2.664,4.134,4.134,0,0,0-.585-2.153,4.357,4.357,0,0,0-8.1,2.153,5.93,5.93,0,0,0,.622,2.589,5.33,5.33,0,0,0,1.618,2.116.993.993,0,0,1,.423.822v.274a1.7,1.7,0,0,1-.386,1.083A1.653,1.653,0,0,1,32.148,169.775Z"
+                                            transform="translate(-20 -158)" fill="#fff" />
+                                    </svg>
+
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">New Character</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-[18px] text-[#B2B2B2] text-[15px] md:text-[15.5px] hover:text-primary">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.274" height="18.176"
+                                        viewBox="0 0 20.274 20.176">
+                                        <path id="image-user-plus-svgrepo-com"
+                                            d="M17.449,7.453V2M14.723,4.726h5.453m0,6.361v4.726a6.773,6.773,0,0,1-.3,2.874,2.726,2.726,0,0,1-1.191,1.191,6.773,6.773,0,0,1-2.874.3H6.362a6.773,6.773,0,0,1-2.874-.3A2.726,2.726,0,0,1,2.3,18.687,6.773,6.773,0,0,1,2,15.813V6.362a6.773,6.773,0,0,1,.3-2.874A2.726,2.726,0,0,1,3.489,2.3,6.773,6.773,0,0,1,6.362,2h4.726M2.132,18.291a3.637,3.637,0,0,1,3.5-2.659H12a9.121,9.121,0,0,1,1.618.07,3.635,3.635,0,0,1,2.856,2.856,9.12,9.12,0,0,1,.07,1.618M12.905,8.816A3.635,3.635,0,1,1,9.27,5.181,3.635,3.635,0,0,1,12.905,8.816Z"
+                                            transform="translate(-0.901 -1)" fill="none" stroke="#fff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                    </svg>
+                                </span>
+                                <span class="transform translate-x-[-3px] md:translate-x-[-5px]">New Image</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Categories action -->
+                <div class="sidebar-menu pb-4 border-light-border px-4 md:px-5 lg:px-7 xl:px-8">
+                    <h4 class="text-white text-[18px] md:text-[19px] font-medium pb-5">Categories</h4>
+
+                    <!-- Accordion Item -->
+                    <div>
+                        <button onclick="toggleAccordion(1)"
+                            class="w-full gap-6 pb-[10px] flex items-center text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">
+                            <span>Pandas</span>
+                            <span id="icon-1" class="text-slate-800 transition-transform duration-300 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#B2B2B2"
+                                    class="w-4 h-4">
+                                    <path
+                                        d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-3 text-[15px] text-[#B2B2B2] font-light hover:text-primary">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Hunting</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Chilling</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Nurturing</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Fighting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Koala</a>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div>
+                        <button onclick="toggleAccordion(2)"
+                            class="w-full gap-6 pb-[10px] flex items-center text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">
+                            <span>Chimi</span>
+                            <span id="icon-2" class="text-slate-800 transition-transform duration-300 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#B2B2B2"
+                                    class="w-4 h-4">
+                                    <path
+                                        d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-3 text-[15px] text-[#B2B2B2] font-light">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Hunting</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Chilling</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Nurturing</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Fighting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Giraffe</a>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div>
+                        <button onclick="toggleAccordion(3)"
+                            class="w-full gap-6 pb-[10px] flex items-center text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">
+                            <span>Dog</span>
+                            <span id="icon-3" class="text-slate-800 transition-transform duration-300 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#B2B2B2"
+                                    class="w-4 h-4">
+                                    <path
+                                        d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-3 text-[15px] text-[#B2B2B2] font-light">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Hunting</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Chilling</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Nurturing</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Fighting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div>
+                        <button onclick="toggleAccordion(4)"
+                            class="w-full gap-6 pb-[10px] flex items-center text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">
+                            <span>Hyen</span>
+                            <span id="icon-4" class="text-slate-800 transition-transform duration-300 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#B2B2B2"
+                                    class="w-4 h-4">
+                                    <path
+                                        d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-3 text-[15px] text-[#B2B2B2] font-light">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Hunting</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Chilling</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Nurturing</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Fighting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div>
+                        <button onclick="toggleAccordion(5)"
+                            class="w-full gap-6 pb-[10px] flex items-center text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">
+                            <span>Lion</span>
+                            <span id="icon-5" class="text-slate-800 transition-transform duration-300 pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#B2B2B2"
+                                    class="w-4 h-4">
+                                    <path
+                                        d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-3 text-[15px] text-[#B2B2B2] font-light">
+                                <ul class="flex flex-col gap-2">
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Hunting</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Chilling</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Nurturing</a></li>
+                                    <li><a class="text-[#B2B2B2] hover:text-primary hover:pl-[2px]" href="#">Lion
+                                            Fighting</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Pandas</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Koala</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Chimi</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Giraffe</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Dog</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Hyen</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Lion</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Pandas</a>
+                    </div>
+                    <div class="pb-[10px]">
+                        <a href="#"
+                            class="text-[#B2B2B2] text-[15px] md:text-[15.5px] cursor-pointer hover:text-primary">Koala</a>
+                    </div>
+                </div>
+
+                <!-- Generate action -->
+                <div
+                    class="sidebar-menu pb-17 md:pb-8 lg:pb-6 px-4 md:px-5 lg:px-7 xl:px-7 bg-[#131313] border-t border-light-border sticky bottom-0 left-0 max-w-[300px] w-full h-fit pt-5">
+                    <ul class="flex flex-col gap-3">
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-3 text-[#B2B2B2] text-[15px] hover:text-primary border-1 rounded-md border-light-border py-[10px] px-4">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 26.477 26.477">
+                                        <path
+                                            d="M77.238,64A13.238,13.238,0,1,1,64,77.238,13.238,13.238,0,0,1,77.238,64Zm.7,5.658A4.975,4.975,0,0,0,74.3,70.969a4.754,4.754,0,0,0-1.352,3.62h2.372a3.4,3.4,0,0,1,.52-2.039,2.171,2.171,0,0,1,1.955-.853A2.026,2.026,0,0,1,80.041,73.9a2.3,2.3,0,0,1-.562,1.477l-.25.291A11.308,11.308,0,0,0,76.8,78.312a4.405,4.405,0,0,0-.416,2.039v.291h2.392v-.291A2.94,2.94,0,0,1,79.084,79a3.224,3.224,0,0,1,.832-1.04c1-.874,1.6-1.435,1.789-1.643a4.157,4.157,0,0,0,.77-2.559,3.774,3.774,0,0,0-1.248-3A4.728,4.728,0,0,0,77.94,69.658Zm-.374,12a1.6,1.6,0,0,0-1.144.437,1.607,1.607,0,0,0,0,2.247,1.621,1.621,0,0,0,1.144.458,1.6,1.6,0,0,0,1.144-.437A1.607,1.607,0,0,0,78.73,82.1,1.653,1.653,0,0,0,77.565,81.662Z"
+                                            transform="translate(-64 -64)" fill="#b2b2b2" />
+                                    </svg>
+                                </span>
+                                <span class="ransform translate-x-[-4px] md:translate-x-[-4px]">Help Center</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center gap-3 text-[#B2B2B2] text-[15px] hover:text-primary border-1 rounded-md border-light-border py-[10px] px-4">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21.8"
+                                        viewBox="0 0 28.163 28.036">
+                                        <g transform="translate(0 0)">
+                                            <g transform="translate(0 0)">
+                                                <path
+                                                    d="M7.494,327.995H1.836A1.965,1.965,0,0,0,0,330.059v5.677A1.967,1.967,0,0,0,1.836,337.8H7.494a1.965,1.965,0,0,0,1.833-2.063v-5.677A1.963,1.963,0,0,0,7.494,327.995Z"
+                                                    transform="translate(0 -309.766)" fill="#b2b2b2" />
+                                                <circle cx="3.527" cy="3.527" r="3.527"
+                                                    transform="translate(1.134 10.598)" fill="#b2b2b2" />
+                                                <path
+                                                    d="M345.289,327.995h-5.658a1.966,1.966,0,0,0-1.833,2.067v5.677a1.967,1.967,0,0,0,1.833,2.064h5.658a1.963,1.963,0,0,0,1.833-2.064v-5.677A1.961,1.961,0,0,0,345.289,327.995Z"
+                                                    transform="translate(-318.96 -309.766)" fill="#b2b2b2" />
+                                                <path
+                                                    d="M361.665,198.224a3.527,3.527,0,1,0-3.525-3.527A3.525,3.525,0,0,0,361.665,198.224Z"
+                                                    transform="translate(-338.167 -180.572)" fill="#b2b2b2" />
+                                                <path d="M204.031,358.306h-3.7v2.3h3.7v1.581l2.729-2.731-2.729-2.727Z"
+                                                    transform="translate(-189.156 -336.896)" fill="#b2b2b2" />
+                                                <path
+                                                    d="M182.764,9.143a3.988,3.988,0,0,0-1.221-.8,12.823,12.823,0,0,0-1.6-.479V3.271a2.16,2.16,0,0,1,1.228.664,2.781,2.781,0,0,1,.592,1.45l1.649-.25a3.674,3.674,0,0,0-1.26-2.407,3.9,3.9,0,0,0-2.206-.824V1.132H179V1.9a4.179,4.179,0,0,0-2.4.873,3.483,3.483,0,0,0-1.211,2.762,3.529,3.529,0,0,0,.413,1.718,2.974,2.974,0,0,0,1.184,1.181,8.354,8.354,0,0,0,2.014.83V14.3a2.331,2.331,0,0,1-1.613-.953,4.11,4.11,0,0,1-.654-1.9l-1.617.309a4.511,4.511,0,0,0,.638,2.115,3.379,3.379,0,0,0,1.3,1.252,5.815,5.815,0,0,0,1.951.541v1.6h.948V15.64a3.849,3.849,0,0,0,3.8-3.971,3.822,3.822,0,0,0-.253-1.406A3.256,3.256,0,0,0,182.764,9.143ZM179,7.614a2.907,2.907,0,0,1-1.549-.829,2.082,2.082,0,0,1-.46-1.367,2.074,2.074,0,0,1,.539-1.429A2.379,2.379,0,0,1,179,3.243Zm2.488,5.874a2.375,2.375,0,0,1-1.54.808V9.512a3.3,3.3,0,0,1,1.723.861,2.148,2.148,0,0,1,.426,1.4A2.517,2.517,0,0,1,181.484,13.488Z"
+                                                    transform="translate(-165.346 -1.132)" fill="#b2b2b2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="ransform translate-x-[-4px] md:translate-x-[-4px]">Affiliate</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sd-social-media flex gap-3 items-center justify-center pt-5">
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.582" height="14.341"
+                                    viewBox="0 0 18.582 14.341">
+                                    <path id="discord-svgrepo-com"
+                                        d="M18.229,5.862A15.353,15.353,0,0,0,14.4,4.66a8.855,8.855,0,0,0-.489,1.017,14.03,14.03,0,0,0-4.243,0,10.9,10.9,0,0,0-.5-1.017,15.353,15.353,0,0,0-3.832,1.2A16.047,16.047,0,0,0,2.578,16.6,15.347,15.347,0,0,0,7.28,19a11.83,11.83,0,0,0,1.007-1.652A9.132,9.132,0,0,1,6.7,16.577c.137-.1.264-.205.391-.3a10.841,10.841,0,0,0,9.395,0c.127.108.254.205.391.3a10.315,10.315,0,0,1-1.584.772A11.83,11.83,0,0,0,16.3,19a15.239,15.239,0,0,0,4.7-2.4A15.991,15.991,0,0,0,18.249,5.862ZM8.7,14.446a1.8,1.8,0,0,1-1.672-1.9,1.786,1.786,0,0,1,1.672-1.9,1.779,1.779,0,0,1,1.672,1.9A1.792,1.792,0,0,1,8.7,14.446Zm6.169,0a1.8,1.8,0,0,1-1.672-1.9,1.786,1.786,0,0,1,1.672-1.9,1.779,1.779,0,0,1,1.672,1.9A1.792,1.792,0,0,1,14.866,14.446Z"
+                                        transform="translate(-2.502 -4.66)" fill="#b2b2b2" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.343" height="16.961"
+                                    viewBox="0 0 17.343 16.961">
+                                    <path id="x"
+                                        d="M17.343,16.961,10.561,7.076l.012.009L16.687,0H14.644L9.662,5.767,5.706,0H.347L6.679,9.229h0L0,16.961H2.043l5.538-6.416,4.4,6.416ZM4.9,1.542l9.516,13.877H12.793L3.27,1.542Z"
+                                        fill="#b2b2b2" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.935" height="18.935"
+                                    viewBox="0 0 18.935 18.935">
+                                    <path id="reddit-svgrepo-com"
+                                        d="M11.385,15.361a.947.947,0,1,1,.362-.072A.947.947,0,0,1,11.385,15.361Zm11.551-1.894a9.468,9.468,0,1,1-2.773-6.695A9.468,9.468,0,0,1,22.935,13.468Zm-5.053-1.574a1.325,1.325,0,0,0-.864.391,6.072,6.072,0,0,0-3.278-1.006L14.4,8.284l2.118.473a.935.935,0,0,0,.935.947.959.959,0,0,0,.947-.959.935.935,0,0,0-1.787-.414l-2.367-.521a.225.225,0,0,0-.26.166l-.734,3.3a6.13,6.13,0,0,0-3.278,1.006A1.266,1.266,0,1,0,8.5,14.3a3.232,3.232,0,0,0,0,.592c0,2,2.26,3.633,5.042,3.633s5.042-1.633,5.042-3.633a2.554,2.554,0,0,0-.071-.6,1.266,1.266,0,0,0-.568-2.367Zm-2.627,4.438a3.338,3.338,0,0,1-3.55,0,.237.237,0,0,0-.32,0,.225.225,0,0,0,0,.331,3.752,3.752,0,0,0,4.213,0,.225.225,0,0,0,0-.331.237.237,0,0,0-.343,0Zm.3-2.864a.947.947,0,1,0,.669.277A.947.947,0,0,0,15.551,13.468Z"
+                                        transform="translate(-4 -4)" fill="#b2b2b2" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center pt-3">
+                        <a href="#" class="text-[#B2B2B2] text-xs md:text-sm hover:text-primary">
+                            Legal hub
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- content wrapper -->
+            <div class="content-wrap relative w-full bg-[#131313] text-white">
+
+                <div class="max-w-[1732px] mx-auto px-3 md:px-4 lg:px-5 xl:px-8 py-10 lg:py-[50px]">
+
+                    <!-- My characters-->
+
+                    <section class="bg-transparent text-white font-madetommy md:py-10 py-4 px-2 sm:px-4 md:px-5 lg:px-10 min-h-screen">
+  <div class="flex flex-col gap-4 sm:flex-row items-start sm:items-center justify-between md:mb-10 mb-5 max-w-[1650px] ">
+    <h2 class="text-[26px] md:text-[32px] lg:text-[37px] xl:text-[40px] xxl:text-[46px] font-black">
+      My <span class="text-[26px] md:text-[32px] lg:text-[37px] xl:text-[40px] xxl:text-[46px] font-black gradient-text">Collection</span>
+    </h2>
+
+     <div class="relative group sortby">
+      <button class="flex items-center gap-2 text-sm text-white md:text-base hover:text-primary hover:border-transparent transition-colors cursor-pointer py-3 rounded-xl px-7 border border-[#3C3C3C]">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4C0 0.626794 0.482149 0 1.07692 0H12.9231C13.5179 0 14 0.626794 14 1.4C14 2.17319 13.5179 2.8 12.9231 2.8H1.07692C0.482149 2.8 0 2.17319 0 1.4ZM0 7C0 6.22681 0.482149 5.6 1.07692 5.6H8.61539C9.21017 5.6 9.69231 6.22681 9.69231 7C9.69231 7.77319 9.21017 8.4 8.61539 8.4H1.07692C0.482149 8.4 0 7.77319 0 7ZM0 12.6C0 11.8268 0.482149 11.2 1.07692 11.2H5.38462C5.97938 11.2 6.46154 11.8268 6.46154 12.6C6.46154 13.3732 5.97938 14 5.38462 14H1.07692C0.482149 14 0 13.3732 0 12.6Z" fill="white"/>
+</svg>
+
+        Sort by
+      </button>
+
+      <div class="absolute top-8 left-0 sm:right-0 mt-2 w-40 bg-[#1A1A1A] border border-light-border rounded-lg py-3 overflow-hidden hidden group-hover:block z-50">
+        <button class="w-full text-left px-4 cursor-pointer py-1 text-sm hover:text-primary transition-colors ">Newest First</button>
+        <button class="w-full text-left px-4 cursor-pointer py-1 text-sm hover:text-primary transition-colors">Oldest First</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 2xxl:grid-cols-4 md:gap-6 gap-3 max-w-[1650px] mx-auto">
+    
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+    <div class=" group cursor-pointer border-1 p-2 border-[#3C3C3C] hover:border-primary rounded-2xl transition-all overflow-hidden bg-transparent">
+      <div class="aspect-[3/4] overflow-hidden relative">
+        <img src="images/collectionImg.webp" alt="Evan Carter" class="w-full h-full object-cover rounded-2xl ">
+              <div class="absolute bottom-0 left-0 right-0 md:pt-4 md:pb-3 px-3 pt-4 pb-3 xl:pt-8 xl:pb-5 xl:px-6 bg-gradient-to-t from-black/90 to-transparent rounded-2xl ">
+        <h3 class="text-xl md:text-[24px] font-medium">Evan Carter</h3>
+        <div class="flex items-center gap-4 text-xs mt-1 text-gray-300">
+          <span class="flex items-center gap-2 text-base">
+           <img src="images/media.svg" class="max-w-full h-auto w-[18px]" alt=""> 
+            255
+          </span>
+          <span class="flex items-center gap-2 text-base">
+            <img src="images/play.svg" class="max-w-full h-auto w-[18px]" alt="">
+            16
+          </span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+
+    </div>
+
+
+</section>
+                  
+                    <!-- My characters -->
+                </div>
+
+
+
+
+                <!-- footer area -->
+                <footer
+                    class="pt-10 md:pt-12 xl:pt-15 xxl:pt-17 px-4 md:px-7 lg:px-10 xl:px-13 bg-[#191919] border-t-1 border-light-border overflow-hidden">
+                    <div class="grid grid-cols-12 gap-8 sm:gap-10 xl:gap-15">
+                        <div class="col-span-12 xl:col-span-4">
+                            <div class="flex flex-col gap-5 xl:gap-6 xxl:gap-7 items-center sm:items-start">
+                                <div>
+                                    <a href="index.html">
+                                        <img class="max-w-[140px] md:max-w-[180px]" src="images/sauci-ai.png" alt="">
+                                    </a>
+                                </div>
+                                <div
+                                    class="text-white text-[15px] md:text-[16px] xl:text-[17px] font-light text-center sm:text-start">
+                                    <p>Neque porro quisquam est, qui dolorem
+                                        ipsum quia dolor sit amet, consectetur,
+                                        adipisci velit, sed quia non numquam eius
+                                        modi tempora incidunt ut labore et dolore.</p>
+                                </div>
+                                <div
+                                    class="text-white text-[15px] md:text-[16px] xl:text-[17px] font-light text-center sm:text-start">
+                                    <p>Neque porro quisquam est, qui dolorem
+                                        ipsum quia dolor sit amet, consectetur,
+                                        adipisci velit, sed quia non numquam eius
+                                        modi tempora incidunt ut labore et dolore.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-6 sm:col-span-4 xl:col-span-3 xxl:col-span-2">
+                            <h3 class="text-primary text-[16px] md:text-[18px] xl:text-[20px] pb-4 lg:pb-5">Menu</h3>
+                            <ul class="flex flex-col gap-[10px] xl:gap-3">
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Chat</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Generate</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Videos</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Create Character</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>AI Models</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-6 sm:col-span-4 xl:col-span-3 xxl:col-span-2">
+                            <h3 class="text-primary text-[16px] md:text-[18px] xl:text-[20px] pb-4 lg:pb-5">Hot
+                                Categories</h3>
+                            <ul class="flex flex-col gap-[10px] xl:gap-3">
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Daggoe</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Blonde</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Asian</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Latina</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Brunette</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-span-12 sm:col-span-3 xl:col-span-2 xxl:col-span-2">
+                            <h3 class="text-primary text-[16px] md:text-[18px] xl:text-[20px] pb-4 lg:pb-5">Socials</h3>
+                            <ul class="flex flex-col gap-[10px] xl:gap-3">
+                                <li>
+                                    <a target="_blank" href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>X</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Discord</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="#"
+                                        class="flex items-center gap-2 text-white text-[16px] md:text-[17px] xl:text-[19px] font-bold hover:text-primary">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="5.768" height="10.597"
+                                                viewBox="0 0 5.768 10.597">
+                                                <path id="arrow-prev-small-svgrepo-com"
+                                                    d="M5.53.235a.8.8,0,0,0-1.136,0L.47,4.164a1.606,1.606,0,0,0,0,2.271L4.4,10.362A.8.8,0,0,0,5.533,9.226L2.172,5.865a.8.8,0,0,1,0-1.136L5.53,1.371A.8.8,0,0,0,5.53.235Z"
+                                                    transform="translate(5.768 10.597) rotate(180)" fill="#fff" />
+                                            </svg>
+                                        </span>
+                                        <span>Reddit</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="items-center gap-2 justify-start hidden sm:flex xl:hidden pt-8">
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[40px] xl:max-w-[50px]"
+                                            src="images/mastercard.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[40px] xl:max-w-[50px]"
+                                            src="images/visacard.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[40px] xl:max-w-[50px]"
+                                            src="images/american-express.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 pt-10 xl:pt-10 xxl:pt-11 pb-4 xl:pb-5 xxl:pb-6 gap-7 xxl:gap-0">
+                        <div class="col-span-12 sm:col-span-6 xxl:col-span-3 order-2 sm:order-1 xl:order-2 xxl:order-1">
+                            <div
+                                class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light sm:mr-[-50px] text-center sm:text-start">
+                                <p>© All Rights Reserved 2025 SAUCI.ai </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-span-12 sm:col-span-6 xl:col-span-12 xxl:col-span-6 order-1 sm:order-1 xl:order-1 xxl:order-2">
+                            <ul class="flex items-center gap-5 md:gap-6 xl:gap-7 justify-center xl:pl-12 2xxl:pl-0">
+                                <li
+                                    class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light hover:text-primary">
+                                    <a href="#">Terms of Service</a>
+                                </li>
+                                <li
+                                    class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light hover:text-primary sm:hidden xl:block">
+                                    |
+                                </li>
+                                <li
+                                    class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light hover:text-primary">
+                                    <a href="#">Privacy</a>
+                                </li>
+                                <li
+                                    class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light hover:text-primary sm:hidden xl:block">
+                                    |
+                                </li>
+                                <li
+                                    class="text-[#989898] text-[15px] md:text-[16px] xl:text-[17px] font-light hover:text-primary">
+                                    <a href="#">Sitemap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 xxl:col-span-3 sm:order-3 xl:order-3">
+                            <ul
+                                class="items-center gap-2 sm:gap-3 justify-center sm:justify-end flex sm:hidden xl:flex">
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[50px]" src="images/mastercard.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[50px]" src="images/visacard.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img class="max-w-[35px] md:max-w-[50px]" src="images/american-express.png"
+                                            alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <!-- Main content area -->
+
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- video popup js -->
+    <script src="js/vedio_popup.js"></script>
+
+    <!-- Custom jQuery -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Scrolltop arrrow -->
+    <a href="#"
+        class="scrolltotop fixed right-[30px] bottom-[25px] hidden w-[38px] h-[38px] rounded-full bg-white items-center justify-center z-[2] transition-all duration-300 animate-top-up"
+        style="opacity: 1; display: flex;">
+        <img class="absolute left-1/2 top-1/2 transform -translate-1/2" src="images/scrolltop-arrow.svg" alt="">
+    </a>
+
+
+</body>
+
+</html>
