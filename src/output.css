@@ -1259,8 +1259,17 @@
   .bg-\[\#000\] {
     background-color: #000;
   }
+  .bg-\[\#000\]\/10 {
+    background-color: color-mix(in oklab, #000 10%, transparent);
+  }
   .bg-\[\#000\]\/30 {
     background-color: color-mix(in oklab, #000 30%, transparent);
+  }
+  .bg-\[\#000\]\/60 {
+    background-color: color-mix(in oklab, #000 60%, transparent);
+  }
+  .bg-\[\#000\]\/70 {
+    background-color: color-mix(in oklab, #000 70%, transparent);
   }
   .bg-\[\#1A1A1A\] {
     background-color: #1A1A1A;
