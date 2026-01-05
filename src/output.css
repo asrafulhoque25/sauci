@@ -573,9 +573,6 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
@@ -590,9 +587,6 @@
   }
   .h-\[38px\] {
     height: 38px;
-  }
-  .h-\[50\] {
-    height: 50;
   }
   .h-\[50px\] {
     height: 50px;
@@ -672,9 +666,6 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-14 {
-    width: calc(var(--spacing) * 14);
-  }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
@@ -701,9 +692,6 @@
   }
   .w-\[38px\] {
     width: 38px;
-  }
-  .w-\[50\] {
-    width: 50;
   }
   .w-\[50px\] {
     width: 50px;
@@ -1271,12 +1259,6 @@
   .bg-\[\#000\]\/30 {
     background-color: color-mix(in oklab, #000 30%, transparent);
   }
-  .bg-\[\#000\]\/60 {
-    background-color: color-mix(in oklab, #000 60%, transparent);
-  }
-  .bg-\[\#000\]\/70 {
-    background-color: color-mix(in oklab, #000 70%, transparent);
-  }
   .bg-\[\#1A1A1A\] {
     background-color: #1A1A1A;
   }
@@ -1364,14 +1346,8 @@
   .bg-\[\#F7A31E\] {
     background-color: #F7A31E;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[gray-900\/80\] {
     background-color: gray-900/80;
-  }
-  .bg-\[transparent\] {
-    background-color: transparent;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -3102,11 +3078,6 @@
       justify-content: flex-end;
     }
   }
-  .sm\:gap-2 {
-    @media (width >= 36rem) {
-      gap: calc(var(--spacing) * 2);
-    }
-  }
   .sm\:gap-3 {
     @media (width >= 36rem) {
       gap: calc(var(--spacing) * 3);
@@ -3120,6 +3091,11 @@
   .sm\:gap-10 {
     @media (width >= 36rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:gap-\[30px\] {
+    @media (width >= 36rem) {
+      gap: 30px;
     }
   }
   .sm\:rounded-\[30px\] {
@@ -3365,11 +3341,6 @@
       height: calc(var(--spacing) * 10);
     }
   }
-  .md\:h-16 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 16);
-    }
-  }
   .md\:h-\[70px\] {
     @media (width >= 48rem) {
       height: 70px;
@@ -3388,11 +3359,6 @@
   .md\:w-10 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:w-16 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 16);
     }
   }
   .md\:w-\[70px\] {
