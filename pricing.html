@@ -751,27 +751,27 @@
                     Upgrade <span class="text-[26px] md:text-[32px] lg:text-[37px] xl:text-[40px] xxl:text-[46px] font-black gradient-text">Your Experience</span>
                 </h2>
 
-                <div class="md:inline-flex flex flex-col md:flex-row items-center sm:bg-black/40 md:p-9 sm:p-4 rounded-2xl sm:border border-light-border gap-3 sm:gap-2">
+                <div class="md:inline-flex flex flex-col md:flex-row items-center sm:bg-black/40 md:p-9 sm:p-4 rounded-2xl sm:border border-[#C1C1C1] gap-3 sm:gap-2">
                     <button @click="billingCycle = 'monthly'" 
                             :class="billingCycle === 'monthly' ? 'border-primary bg-primary/10' : 'border-[#3C3C3C]'"
-                            class="px-8 py-3 rounded-xl border-1 transition-all text-sm font-medium w-full md:w-auto whitespace-nowrap">
+                            class="px-[60px] py-[14px] rounded-[15px] border-1 transition-all text-sm md:text-base font-medium w-full md:w-auto whitespace-nowrap">
                         Monthly
                     </button>
                     
                     <div class="relative w-full md:w-auto">
-                        <span class="absolute sm:-top-6 top-3 sm:left-1/2 -right-10 -translate-x-1/2 bg-[#F7A31E] text-white text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">+20% Free Coins</span>
+                        <span class="absolute sm:-top-6 top-[15px] sm:left-1/2 -right-10 -translate-x-1/2 bg-[#F7A31E] text-white text-[10px] font-medium px-2 py-0.5 rounded-full whitespace-nowrap">+20% Free Coins</span>
                         <button @click="billingCycle = '3months'" 
                                 :class="billingCycle === '3months' ? 'border-primary bg-primary/10' : 'border-[#3C3C3C]'"
-                                class="px-8 py-3 rounded-xl border-1 transition-all text-sm font-medium w-full md:w-auto whitespace-nowrap">
+                                class="px-[60px] py-[14px] rounded-[15px] border-1 transition-all text-sm md:text-base font-medium w-full md:w-auto whitespace-nowrap">
                             3 Months
                         </button>
                     </div>
 
                     <div class="relative w-full md:w-auto">
-                        <span class="absolute sm:-top-6 top-3 sm:left-1/2 -right-10 -translate-x-1/2 bg-[#F7A31E] text-white text-[10px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">+20% Free Coins</span>
+                        <span class="absolute sm:-top-6 top-[15px] sm:left-1/2 -right-10 -translate-x-1/2 bg-[#F7A31E] text-white text-[10px] font-medium px-2 py-0.5 rounded-full whitespace-nowrap">+20% Free Coins</span>
                         <button @click="billingCycle = 'yearly'" 
                                 :class="billingCycle === 'yearly' ? 'border-primary bg-primary/10' : 'border-[#3C3C3C]'"
-                                class="px-8 py-3 rounded-xl border-1 transition-all text-sm font-medium w-full md:w-auto whitespace-nowrap">
+                                class="px-[60px] py-[14px] rounded-[15px] border-1 transition-all text-sm md:text-base font-medium w-full md:w-auto whitespace-nowrap">
                             Yearly
                         </button>
                     </div>
@@ -789,11 +789,11 @@
                         <span class="text-3xl font-bold text-primary">€19</span>
                         <span class="text-white text-sm">/ monthly</span>
                     </div>
-                    <p class="text-white text-xs mb-8 ">Ideal For Light Usage And First-Time Users.</p>
+                    <p class="text-white text-[13px] mb-[30px] mt-[16px]">Ideal For Light Usage And First-Time Users.</p>
                     
-                    <button  command="show-modal" commandfor="price" class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-bold mb-6 hover:opacity-90 transition">Choose Plan</button>
+                    <button  command="show-modal" commandfor="price" class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-medium text-base mb-[15px] hover:opacity-90 transition">Choose Plan</button>
                     
-                    <div class="flex items-center gap-2 mb-6">
+                    <div class="flex items-center gap-2 mb-6 border-b border-[#3C3C3C] pb-[20px] pt-[15px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1051 21.7894H2.21051C1.88946 21.7894 1.58156 21.6619 1.35455 21.4349C1.12754 21.2079 1 20.9 1 20.5789V9.68416C1 9.36311 1.12754 9.05521 1.35455 8.82819C1.58156 8.60117 1.88946 8.47363 2.21051 8.47363H5.84203M13.1051 21.7894H16.7366C17.0576 21.7894 17.3655 21.6619 17.5925 21.4349C17.8196 21.2079 17.9471 20.9 17.9471 20.5789V17.5526M13.1051 21.7894V20.5789" stroke="#E561DC" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9999 4.84195C23.9999 4.19985 23.7449 3.58404 23.2908 3.13001C22.8368 2.67597 22.221 2.4209 21.5789 2.4209H7.05285C6.41076 2.4209 5.79496 2.67597 5.34093 3.13001C4.88691 3.58404 4.63184 4.19985 4.63184 4.84195V15.7367C4.63184 16.3788 4.88691 16.9946 5.34093 17.4486C5.79496 17.9027 6.41076 18.1578 7.05285 18.1578H21.5789C22.221 18.1578 22.8368 17.9027 23.2908 17.4486C23.7449 16.9946 23.9999 16.3788 23.9999 15.7367V4.84195ZM19.1579 4.84316C19.1579 5.16422 19.0304 5.47212 18.8034 5.69914C18.5764 5.92615 18.2685 6.05369 17.9474 6.05369C17.6264 6.05369 17.3185 5.92615 17.0915 5.69914C16.8644 5.47212 16.7369 5.16422 16.7369 4.84316C16.7369 4.52211 16.8644 4.213 17.0915 3.98598C17.3185 3.75896 17.6264 3.63143 17.9474 3.63143C18.2685 3.63143 18.5764 3.75896 18.8034 3.98598C19.0304 4.213 19.1579 4.52211 19.1579 4.84316ZM17.9474 10.8958C18.2685 10.8958 18.5764 10.7683 18.8034 10.5412C19.0304 10.3142 19.1579 10.0063 19.1579 9.68527V9.68406C19.1579 9.36301 19.0304 9.05511 18.8034 8.82809C18.5764 8.60107 18.2685 8.47354 17.9474 8.47354C17.6264 8.47354 17.3185 8.60107 17.0915 8.82809C16.8644 9.05511 16.7369 9.36301 16.7369 9.68406V9.68527C16.7369 10.0063 16.8644 10.3142 17.0915 10.5412C17.3185 10.7683 17.6264 10.8958 17.9474 10.8958ZM19.1579 14.5274C19.1579 14.8484 19.0304 15.1563 18.8034 15.3834C18.5764 15.6104 18.2685 15.7379 17.9474 15.7379C17.6264 15.7379 17.3185 15.6104 17.0915 15.3834C16.8644 15.1563 16.7369 14.8484 16.7369 14.5274V14.5262C16.7369 14.2051 16.8644 13.8972 17.0915 13.6702C17.3185 13.4432 17.6264 13.3156 17.9474 13.3156C18.2685 13.3156 18.5764 13.4432 18.8034 13.6702C19.0304 13.8972 19.1579 14.2051 19.1579 14.5262V14.5274Z" fill="#E561DC"/>
@@ -811,20 +811,20 @@
                 <div class="bg-[#161616] border border-light-border hover:border-[#E561DC] rounded-3xl p-8 flex flex-col relative group">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="text-2xl font-bold">Creator+</h3>
-                        <span class="bg-black/40 text-xs px-2 py-1 rounded border border-light-border text-gray-400" x-text="billingCycle === 'monthly' ? 'Standard' : (billingCycle === '3months' ? 'Save 15%' : 'Save 20%')"></span>
+                        <span class="bg-black/40 text-xs px-2 py-1 rounded-[6px] border border-light-border text-white" x-text="billingCycle === 'monthly' ? 'Standard' : (billingCycle === '3months' ? 'Save 15%' : 'Save 20%')"></span>
                     </div>
                     <div class="flex items-baseline gap-2 border-b border-[#3C3C3C] md:pb-5 md:mb-4 mb-3 pb-3">
                         <span class="text-[#3C3C3C] line-through text-[22px]" x-show="billingCycle !== 'monthly'" x-text="billingCycle === '3months' ? '€117' : '€468'"></span>
                         <span class="text-3xl font-bold text-primary" x-text="billingCycle === 'monthly' ? '€39' : (billingCycle === '3months' ? '€99' : '€390')"></span>
                         <span class="text-white text-sm">/ <span x-text="billingCycle"></span></span>
                     </div>
-                    <p class="text-white text-xs mb-8">Ideal For Content Creators and Designers.</p>
+                    <p class="text-white text-xs mb-[30px] mt-[16px]">Ideal For Content Creators and Designers.</p>
                     
-                    <button class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-bold mb-6 hover:opacity-90 transition">Choose Plan</button>
+                    <button class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-medium text-base mb-[15px] hover:opacity-90 transition">Choose Plan</button>
                     
-                    <button x-show="billingCycle !== 'monthly'" class="w-full py-3 cursor-pointer rounded-xl bg-[#F7A31E] text-white font-bold text-sm mb-6 flex items-center justify-center gap-2">Pay With Crypto → +20% Free Coins</button>
+                    <button x-show="billingCycle !== 'monthly'" class="w-full py-3 cursor-pointer rounded-xl bg-[#F7A31E] text-white font-medium text-sm mb-6 flex items-center justify-center gap-2">Pay With Crypto → +20% Free Coins</button>
                     
-                    <div class="flex items-center gap-2 mb-6">
+                    <div class="flex items-center gap-2 mb-6 border-b border-[#3C3C3C] pb-[20px] pt-[15px]">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1051 21.7894H2.21051C1.88946 21.7894 1.58156 21.6619 1.35455 21.4349C1.12754 21.2079 1 20.9 1 20.5789V9.68416C1 9.36311 1.12754 9.05521 1.35455 8.82819C1.58156 8.60117 1.88946 8.47363 2.21051 8.47363H5.84203M13.1051 21.7894H16.7366C17.0576 21.7894 17.3655 21.6619 17.5925 21.4349C17.8196 21.2079 17.9471 20.9 17.9471 20.5789V17.5526M13.1051 21.7894V20.5789" stroke="#E561DC" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9999 4.84195C23.9999 4.19985 23.7449 3.58404 23.2908 3.13001C22.8368 2.67597 22.221 2.4209 21.5789 2.4209H7.05285C6.41076 2.4209 5.79496 2.67597 5.34093 3.13001C4.88691 3.58404 4.63184 4.19985 4.63184 4.84195V15.7367C4.63184 16.3788 4.88691 16.9946 5.34093 17.4486C5.79496 17.9027 6.41076 18.1578 7.05285 18.1578H21.5789C22.221 18.1578 22.8368 17.9027 23.2908 17.4486C23.7449 16.9946 23.9999 16.3788 23.9999 15.7367V4.84195ZM19.1579 4.84316C19.1579 5.16422 19.0304 5.47212 18.8034 5.69914C18.5764 5.92615 18.2685 6.05369 17.9474 6.05369C17.6264 6.05369 17.3185 5.92615 17.0915 5.69914C16.8644 5.47212 16.7369 5.16422 16.7369 4.84316C16.7369 4.52211 16.8644 4.213 17.0915 3.98598C17.3185 3.75896 17.6264 3.63143 17.9474 3.63143C18.2685 3.63143 18.5764 3.75896 18.8034 3.98598C19.0304 4.213 19.1579 4.52211 19.1579 4.84316ZM17.9474 10.8958C18.2685 10.8958 18.5764 10.7683 18.8034 10.5412C19.0304 10.3142 19.1579 10.0063 19.1579 9.68527V9.68406C19.1579 9.36301 19.0304 9.05511 18.8034 8.82809C18.5764 8.60107 18.2685 8.47354 17.9474 8.47354C17.6264 8.47354 17.3185 8.60107 17.0915 8.82809C16.8644 9.05511 16.7369 9.36301 16.7369 9.68406V9.68527C16.7369 10.0063 16.8644 10.3142 17.0915 10.5412C17.3185 10.7683 17.6264 10.8958 17.9474 10.8958ZM19.1579 14.5274C19.1579 14.8484 19.0304 15.1563 18.8034 15.3834C18.5764 15.6104 18.2685 15.7379 17.9474 15.7379C17.6264 15.7379 17.3185 15.6104 17.0915 15.3834C16.8644 15.1563 16.7369 14.8484 16.7369 14.5274V14.5262C16.7369 14.2051 16.8644 13.8972 17.0915 13.6702C17.3185 13.4432 17.6264 13.3156 17.9474 13.3156C18.2685 13.3156 18.5764 13.4432 18.8034 13.6702C19.0304 13.8972 19.1579 14.2051 19.1579 14.5262V14.5274Z" fill="#E561DC"/>
@@ -837,24 +837,24 @@
                     </ul>
                 </div>
 
-                <div class="bg-[#161616] border-2 border-primary rounded-3xl p-8 flex flex-col relative">
-                    <div class="absolute -top-0 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-b-[10px] text-[10px] font-bold uppercase tracking-widest text-white">Most Popular</div>
-                    <div class="flex justify-between items-start mb-2 mt-2">
+                <div class="bg-[#161616] border-1 border-primary rounded-3xl p-8 flex flex-col relative">
+                    <div class="absolute -top-0 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-b-[10px] text-[13px] font-medium  text-white">Most Popular</div>
+                    <div class="flex justify-between items-start mb-2">
                         <h3 class="text-2xl font-bold">Pro+</h3>
-                        <span class="bg-black/40 text-xs px-2 py-1 rounded border border-light-border text-gray-400" x-text="billingCycle === 'monthly' ? 'Standard' : 'Save 20%'"></span>
+                        <span class="bg-black/40 text-xs px-2 py-1 rounded-[6px] border border-light-border text-white" x-text="billingCycle === 'monthly' ? 'Standard' : 'Save 20%'"></span>
                     </div>
                     <div class="flex items-baseline gap-2 border-b border-[#3C3C3C] md:pb-5 md:mb-4 mb-3 pb-3">
                         <span class="text-[#3C3C3C] line-through text-[22px]" x-show="billingCycle !== 'monthly'" x-text="billingCycle === '3months' ? '€239' : '€950'"></span>
                         <span class="text-3xl font-bold text-primary" x-text="billingCycle === 'monthly' ? '€79' : (billingCycle === '3months' ? '€189' : '€750')"></span>
                         <span class="text-white text-sm">/ <span x-text="billingCycle"></span></span>
                     </div>
-                    <p class="text-white text-xs mb-8">Built For Professionals And Power Users.</p>
+                    <p class="text-white text-xs mb-[30px] mt-[16px]">Built For Professionals And Power Users.</p>
                     
-                    <button class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-bold mb-6 hover:opacity-90 transition">Choose Plan</button>
+                    <button class="w-full py-3 cursor-pointer rounded-xl bg-gradient-to-r from-blue to-primary font-medium text-base mb-[15px] hover:opacity-90 transition">Choose Plan</button>
                     
-                    <button x-show="billingCycle !== 'monthly'" class="w-full py-3 cursor-pointer rounded-xl bg-[#F7A31E] text-white font-bold text-sm mb-6 flex items-center justify-center gap-2">Pay With Crypto → +20% Free Coins</button>
+                    <button x-show="billingCycle !== 'monthly'" class="w-full py-3 cursor-pointer rounded-xl bg-[#F7A31E] text-white font-medium text-sm mb-6 flex items-center justify-center gap-2">Pay With Crypto → +20% Free Coins</button>
                     
-                    <div class="flex items-center gap-2 mb-6">
+                    <div class="flex items-center gap-2 mb-6 border-b border-[#3C3C3C] pb-[20px] pt-[15px]">
                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M13.1051 21.7894H2.21051C1.88946 21.7894 1.58156 21.6619 1.35455 21.4349C1.12754 21.2079 1 20.9 1 20.5789V9.68416C1 9.36311 1.12754 9.05521 1.35455 8.82819C1.58156 8.60117 1.88946 8.47363 2.21051 8.47363H5.84203M13.1051 21.7894H16.7366C17.0576 21.7894 17.3655 21.6619 17.5925 21.4349C17.8196 21.2079 17.9471 20.9 17.9471 20.5789V17.5526M13.1051 21.7894V20.5789" stroke="#E561DC" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9999 4.84195C23.9999 4.19985 23.7449 3.58404 23.2908 3.13001C22.8368 2.67597 22.221 2.4209 21.5789 2.4209H7.05285C6.41076 2.4209 5.79496 2.67597 5.34093 3.13001C4.88691 3.58404 4.63184 4.19985 4.63184 4.84195V15.7367C4.63184 16.3788 4.88691 16.9946 5.34093 17.4486C5.79496 17.9027 6.41076 18.1578 7.05285 18.1578H21.5789C22.221 18.1578 22.8368 17.9027 23.2908 17.4486C23.7449 16.9946 23.9999 16.3788 23.9999 15.7367V4.84195ZM19.1579 4.84316C19.1579 5.16422 19.0304 5.47212 18.8034 5.69914C18.5764 5.92615 18.2685 6.05369 17.9474 6.05369C17.6264 6.05369 17.3185 5.92615 17.0915 5.69914C16.8644 5.47212 16.7369 5.16422 16.7369 4.84316C16.7369 4.52211 16.8644 4.213 17.0915 3.98598C17.3185 3.75896 17.6264 3.63143 17.9474 3.63143C18.2685 3.63143 18.5764 3.75896 18.8034 3.98598C19.0304 4.213 19.1579 4.52211 19.1579 4.84316ZM17.9474 10.8958C18.2685 10.8958 18.5764 10.7683 18.8034 10.5412C19.0304 10.3142 19.1579 10.0063 19.1579 9.68527V9.68406C19.1579 9.36301 19.0304 9.05511 18.8034 8.82809C18.5764 8.60107 18.2685 8.47354 17.9474 8.47354C17.6264 8.47354 17.3185 8.60107 17.0915 8.82809C16.8644 9.05511 16.7369 9.36301 16.7369 9.68406V9.68527C16.7369 10.0063 16.8644 10.3142 17.0915 10.5412C17.3185 10.7683 17.6264 10.8958 17.9474 10.8958ZM19.1579 14.5274C19.1579 14.8484 19.0304 15.1563 18.8034 15.3834C18.5764 15.6104 18.2685 15.7379 17.9474 15.7379C17.6264 15.7379 17.3185 15.6104 17.0915 15.3834C16.8644 15.1563 16.7369 14.8484 16.7369 14.5274V14.5262C16.7369 14.2051 16.8644 13.8972 17.0915 13.6702C17.3185 13.4432 17.6264 13.3156 17.9474 13.3156C18.2685 13.3156 18.5764 13.4432 18.8034 13.6702C19.0304 13.8972 19.1579 14.2051 19.1579 14.5262V14.5274Z" fill="#E561DC"/>
