@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="style.css">	
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
-<body class="tracking-[4%] font-madetommy font-normal bg-[#131313]">
+<body class="tracking-[4%] font-madetommy font-normal bg-[#131313]  :class="{ 'banner-active': showBanner }" x-data="cookieBanner()">
 
     <!-- Header area here  -->
     <header class="header-wrap mask">
@@ -2174,6 +2176,113 @@
      </main>
     <!-- Main content area -->
 
+
+
+
+
+        <!-- Backdrop Blur Overlay -->
+    <div x-show="showBanner" 
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-200"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="page-backdrop">
+    </div>
+
+      <!-- Cookie Banner -->
+    <div x-show="showBanner" 
+         x-cloak
+         class="fixed top-0 left-0 right-0 z-50 cookie-banner-enter">
+        
+        <div class="bg-white shadow-2xl border-b-2 border-gray-200">
+            <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                    
+                    <!-- Logo & Content Section -->
+                    <div class="flex items-start gap-4 flex-1">
+                        
+
+                        <!-- Text Content -->
+                        <div class="flex-1">
+                            <!-- Logo -->
+                        <div class="flex-shrink-0 mb-4">
+                            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
+                              <img src="images/cookie-logo.svg" class="max-w-full h-auto" alt="">
+                            </div>
+                        </div>
+                            <h2 class="text-xl font-bold text-black mb-2">Deze website maakt gebruik van cookies</h2>
+                            <p class="text-sm text-black leading-relaxed">
+                                We gebruiken cookies om content en advertenties te personaliseren, om functies voor social media te bieden en om ons websiteverkeer te analyseren. Ook delen we informatie over uw gebruik van onze site met onze partners voor social media, adverteren en analyse. Deze partners kunnen deze gegevens combineren met andere informatie die u aan ze heelt verstrekt of die ze hebben verzameld op basis van uw gebruik van hun services.
+                            </p>
+
+                                 <!-- Toggle Switches Section -->
+                    <div class="flex flex-wrap items-center gap-6 lg:gap-8 mt-8">
+                        <!-- Noodzakelijk -->
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs font-medium text-gray-700">Noodzakelijk</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" checked disabled>
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Voorkeuren -->
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs font-medium text-gray-700">Voorkeuren</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" x-model="preferences">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Statistieken -->
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs font-medium text-gray-700">Statistieken</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" x-model="statistics">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Marketing -->
+                        <div class="flex flex-col items-center gap-2">
+                            <span class="text-xs font-medium text-gray-700">Marketing</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" x-model="marketing">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Details Button -->
+                        <button class="flex items-center gap-2 text-black font-medium text-sm hover:text-primary transition">
+                            <span>Details tonen</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                        </div>
+                    </div>
+
+               
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 lg:flex-col w-full lg:w-auto">
+                        <button @click="acceptAll" 
+                                class="px-8 py-3 bg-primary text-white font-medium rounded hover:bg-primary/80 transition whitespace-nowrap">
+                            Alles toestaan
+                        </button>
+                        <button @click="rejectAll" 
+                                class="px-8 py-3 bg-[#000] text-white font-medium rounded hover:bg-primary transition whitespace-nowrap">
+                            Weigeren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     	
     <!-- Main jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>

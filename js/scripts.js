@@ -347,3 +347,67 @@ menuItems.forEach(item => {
                 checkIcon.classList.add('hidden');
             }
         }
+
+
+
+
+
+
+
+// For cookie 
+
+         function cookieBanner() {
+            return {
+                showBanner: false,
+                preferences: true,
+                statistics: true,
+                marketing: true,
+
+                init() {
+                    // Check if user has already made a choice
+                    const consent = localStorage.getItem('cookieConsent');
+                    if (!consent) {
+                        // Show banner after a small delay for smooth animation
+                        setTimeout(() => {
+                            this.showBanner = true;
+                        }, 500);
+                    }
+                },
+
+                acceptAll() {
+                    this.preferences = true;
+                    this.statistics = true;
+                    this.marketing = true;
+                    this.saveCookieConsent({
+                        necessary: true,
+                        preferences: true,
+                        statistics: true,
+                        marketing: true
+                    });
+                    this.closeBanner();
+                },
+
+                rejectAll() {
+                    this.preferences = false;
+                    this.statistics = false;
+                    this.marketing = false;
+                    this.saveCookieConsent({
+                        necessary: true,
+                        preferences: false,
+                        statistics: false,
+                        marketing: false
+                    });
+                    this.closeBanner();
+                },
+
+                saveCookieConsent(settings) {
+                    localStorage.setItem('cookieConsent', JSON.stringify(settings));
+                    console.log('Cookie preferences saved:', settings);
+                    // Here you would typically initialize your analytics, marketing scripts, etc.
+                },
+
+                closeBanner() {
+                    this.showBanner = false;
+                }
+            }
+        }
